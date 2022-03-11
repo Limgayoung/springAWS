@@ -21,7 +21,7 @@ public class Item {
         this.title = title;
     }
 
-    public boolean isDone() {
+    public boolean getDone() {
         return done;
     }
 

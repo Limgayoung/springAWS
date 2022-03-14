@@ -11,10 +11,9 @@ public class MemoryItemRepository implements ItemRepository{
     private static long sequence=0L;
 
     @Override
-    public Item saveItem(Item item) {
+    public void saveItem(Item item) {
         item.setId(++sequence);
         store.put(sequence, item);
-        return item;
     }
 
     @Override

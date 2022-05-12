@@ -1,0 +1,35 @@
+a{
+    color: #EEEFF1;
+}
+
+.container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar{
+
+    background-color: slategrey;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    color: #EEEFF1;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: #EEEFF1;
+}
+.task{
+    width: 80%;
+}
+
+.new_task{
+    background-color: #EEEFF1;
+    font-size: 20px;
+    color: slategrey;
+    position: absolute;
+    left: 80%;
+    top: 80%;
+}

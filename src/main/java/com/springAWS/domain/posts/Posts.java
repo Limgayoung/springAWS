@@ -1,5 +1,6 @@
 package com.springAWS.domain.posts;
 
+import com.springAWS.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts { //실제 DB 테이블과 매칭될 클래스, 보통 Entity 클래스라고 함
+public class Posts extends BaseTimeEntity { //실제 DB 테이블과 매칭될 클래스, 보통 Entity 클래스라고 함
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //PK의 생성 규칙, GenerationType.IDENTITY 를 해야 auto_increment 됨

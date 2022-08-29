@@ -1,5 +1,6 @@
 package com.springAWS.web;
 
+import com.springAWS.config.auth.LoginUser;
 import com.springAWS.config.auth.dto.SessionUser;
 import com.springAWS.service.posts.PostsService;
 import com.springAWS.web.dto.PostsResponseDto;
@@ -19,10 +20,10 @@ public class IndexController { //페이지에 관련된 컨트롤러
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsService.findAllDesc());
 
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+        //SessionUser user = (SessionUser) httpSession.getAttribute("user");
 
         if (user != null) {
             model.addAttribute("userName", user.getName());

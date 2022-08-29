@@ -22,6 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/js/**", "/h2-console/**").permitAll()
                     .antMatchers("/api/v1/**").hasRole(Role.USER.name())
                 //antMatchers : 권한 관리 대상 지정하는 옵션
+                //git 확인용
                 //URL, HTTP 메소드별로 관리 가능함
                 //permitALL : 전체 열람 권한 줌
                 //hasRole(Role.USER.name()) : USER 권한 가진 사람만 가능하게 함

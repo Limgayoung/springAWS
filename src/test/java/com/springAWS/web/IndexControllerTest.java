@@ -1,7 +1,5 @@
 package com.springAWS.web;
 
-import junit.framework.TestCase;
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +25,5 @@ public class IndexControllerTest {
 
         //then
         assertThat(body).contains("스프링 부트로 시작하는 웹 서비스");
-
     }
-
 }
